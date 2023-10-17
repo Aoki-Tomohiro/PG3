@@ -3,22 +3,22 @@
 #include <fstream>
 #include <string>
 
-int Normal(int hourlyWage, int hour) {
+int Normal(int wage, int hour) {
 
 	if (hour <= 1) {
-		return hourlyWage;
+		return wage;
 	}
 
-	return hourlyWage + Normal(1072, hour - 1);
+	return wage + Normal(1072, hour - 1);
 }
 
-int Recursive(int hourlyWage, int hour) {
+int Recursive(int wage, int hour) {
 
 	if (hour <= 1) {
-		return hourlyWage;
+		return wage;
 	}
 
-	return hourlyWage + Recursive(hourlyWage * 2 - 50, hour - 1);
+	return wage + Recursive(wage * 2 - 50, hour - 1);
 }
 
 int main() {

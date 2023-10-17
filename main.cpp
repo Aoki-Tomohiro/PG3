@@ -3,25 +3,44 @@
 #include <fstream>
 #include <string>
 
-int Recursive(int recursive, int hour) {
+int Normal(int hourlyWage, int hour) {
 
-	if (1072 < recursive) {
-		return 1;
+	if (hour <= 1) {
+		return hourlyWage;
 	}
 
-	return hour + Recursive(recursive * 2 - 50, 1);
+	return hourlyWage + Normal(1072, hour - 1);
+}
+
+int Recursive(int hourlyWage, int hour) {
+
+	if (hour <= 1) {
+		return hourlyWage;
+	}
+
+	return hourlyWage + Recursive(hourlyWage * 2 - 50, hour - 1);
 }
 
 int main() {
 
-	int result = Recursive(100, 1);
+	int hour = 0;
+	int normalResult = 0;
+	int recursiveResult = 0;
 
-	std::cout << result << "時間働くと再帰的な資金体系のほうが儲かる\n" << std::endl;
+	while (recursiveResult <= normalResult) {
+		hour++;
+		normalResult = Normal(1072, hour);
+		recursiveResult = Recursive(100, hour);
+	}
+
+	std::cout << hour << "時間働いた場合" << std::endl;
+	std::cout << "通常資金" << " " << normalResult << std::endl;
+	std::cout << "再帰的資金" << " " << recursiveResult << std::endl;
 
 	std::ofstream writingFile;
 	std::string fileName = "answer.md";
 	writingFile.open(fileName, std::ios::out);
-	writingFile << result << "時間働くと再帰的な資金体系のほうが儲かる\n" << std::endl;
+	writingFile << hour << "時間働くと再帰的な資金体系のほうが儲かる" << std::endl;
 	writingFile.close();
 
 	return 0;

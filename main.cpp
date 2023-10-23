@@ -5,25 +5,25 @@
 #include <Windows.h>
 
 void Game(std::function<int(std::mt19937&)> func, std::mt19937& randomEngine) {
-	std::cout << "奇数か偶数を選んでください" << "\n" << "1:奇数" << " " << "2:偶数" << std::endl;
+	std::cout << "奇数か偶数を選んでください" << "\n" << std::endl;
 	std::string num;
 	std::cin >> num;
 	Sleep(3 * 1000);
 	int result = func(randomEngine);
 
 	if (result % 2 == 0) {
-		if (num == "1") {
+		if (num == "奇数") {
 			std::cout << "サイコロの出目" << " " << result << "\n" << "GameOver" << std::endl;
 		}
-		else if (num == "2") {
+		else if (num == "偶数") {
 			std::cout << "サイコロの出目" << " " << result << "\n" << "GameClear" << std::endl;
 		}
 	}
 	else if (result % 2 == 1) {
-		if (num == "1") {
+		if (num == "奇数") {
 			std::cout << "サイコロの出目" << " " << result << "\n" << "GameClear" << std::endl;
 		}
-		else if (num == "2") {
+		else if (num == "偶数") {
 			std::cout << "サイコロの出目" << " " << result << "\n" << "GameOver" << std::endl;
 		}
 	}

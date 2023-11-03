@@ -128,10 +128,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Num.cpp" />
+    <ClCompile Include="NumberComparer.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Num.h" />
+    <ClInclude Include="NumberComparer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,26 +1,26 @@
 #include <stdio.h>
 #include <iostream>
-#include "Num.h"
+#include "NumberComparer.h"
 
 int main() {
 
-	Num<int, int> a(1, 2);
-	std::cout << a.Min() << std::endl;
+	NumberComparer<int, int> comparer1(1, 2);
+	std::cout << comparer1.Min() << std::endl;
 
-	Num<int, float> b(3, 4.0f);
-	std::cout << b.Min() << std::endl;
+	NumberComparer<int, float> comparer2(3, 4.0f);
+	std::cout << comparer2.Min() << std::endl;
 
-	Num<int, double> c(5, 6.0f);
-	std::cout << c.Min() << std::endl;
+	NumberComparer<int, double> comparer3(5, 6.0f);
+	std::cout << comparer3.Min() << std::endl;
 
-	Num<float, float> d(7.0f, 8.0f);
-	std::cout << d.Min() << std::endl;
+	NumberComparer<float, float> comparer4(7.0f, 8.0f);
+	std::cout << comparer4.Min() << std::endl;
 
-	Num<float, double> e(9.0f, 10.0f);
-	std::cout << e.Min() << std::endl;
+	NumberComparer<float, double> comparer5(9.0f, 10.0f);
+	std::cout << comparer5.Min() << std::endl;
 
-	Num<double, double> f(11.0f, 12.0f);
-	std::cout << f.Min() << std::endl;
+	NumberComparer<double, double> comparer6(11.0f, 12.0f);
+	std::cout << comparer6.Min() << std::endl;
 
 	return 0;
 }

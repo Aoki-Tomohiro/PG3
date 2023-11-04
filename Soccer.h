@@ -1,7 +1,7 @@
 #pragma once
 #include "Sports.h"
 
-class Soccer : public Sports{
+class Soccer : public Sports {
 public:
 	Soccer();
 	~Soccer() override;
@@ -10,4 +10,3 @@ public:
 private:
 
 };
-

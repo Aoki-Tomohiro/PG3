@@ -4,10 +4,9 @@
 class BaseBall : public Sports {
 public:
 	BaseBall();
-	~BaseBall();
-	void Play();
+	~BaseBall() override;
+	void Play() override;
 
 private:
 
 };
-

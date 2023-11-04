@@ -18,6 +18,19 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BaseBall.cpp" />
+    <ClCompile Include="BasketBall.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Soccer.cpp" />
+    <ClCompile Include="Sports.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BaseBall.h" />
+    <ClInclude Include="BasketBall.h" />
+    <ClInclude Include="Soccer.h" />
+    <ClInclude Include="Sports.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -126,19 +139,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="BaseBall.cpp" />
-    <ClCompile Include="BasketBall.cpp" />
-    <ClCompile Include="Soccer.cpp" />
-    <ClCompile Include="Sports.cpp" />
-    <ClCompile Include="main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="BaseBall.h" />
-    <ClInclude Include="BasketBall.h" />
-    <ClInclude Include="Soccer.h" />
-    <ClInclude Include="Sports.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

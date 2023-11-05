@@ -5,15 +5,15 @@
 
 int main() {
 
-	//バスケ
+	//繝舌せ繧ｱ
 	Sports* basketBall = new BasketBall();
 	basketBall->Play();
 
-	//サッカー
+	//繧ｵ繝�繧ｫ繝ｼ
 	Sports* soccer = new Soccer();
 	soccer->Play();
 
-	//野球
+	//驥守帥
 	Sports* baseBall = new BaseBall();
 	baseBall->Play();
 

@@ -5,5 +5,5 @@ BaseBall::BaseBall() {};
 BaseBall::~BaseBall() {};
 
 void BaseBall::Play() {
-	std::cout << "–ì‹…‚Å—V‚Ô" << std::endl;
+	std::cout << "é‡Žçƒã§éŠã¶" << std::endl;
 }

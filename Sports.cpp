@@ -5,5 +5,5 @@ Sports::Sports() {}
 Sports::~Sports() {}
 
 void Sports::Play() {
-	std::cout << "�X�|�[�c�ŗV��" << std::endl;
+	std::cout << "スポーツで遊ぶ" << std::endl;
 }

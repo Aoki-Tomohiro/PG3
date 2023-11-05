@@ -5,5 +5,5 @@ Soccer::Soccer() {};
 Soccer::~Soccer() {};
 
 void Soccer::Play() {
-	std::cout << "サッカーで遊ぶ" << std::endl;
+	std::cout << "繧ｵ繝�繧ｫ繝ｼ縺ｧ驕翫�ｶ" << std::endl;
 }

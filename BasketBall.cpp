@@ -5,5 +5,5 @@ BasketBall::BasketBall() {}
 BasketBall::~BasketBall() {}
 
 void BasketBall::Play() {
-	std::cout << "ƒoƒXƒPƒbƒgƒ{[ƒ‹‚Å—V‚Ô" << std::endl;
+	std::cout << "ãƒã‚¹ã‚±ãƒƒãƒˆãƒœãƒ¼ãƒ«ã§éŠã¶" << std::endl;
 }

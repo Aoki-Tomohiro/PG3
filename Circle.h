@@ -1,4 +1,4 @@
-﻿#pragma once
+#pragma once
 #include "IShape.h"
 
 class Circle : public IShape {

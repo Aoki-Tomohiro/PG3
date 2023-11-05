@@ -1,4 +1,4 @@
-﻿#include "Rectangle.h"
+#include "Rectangle.h"
 #include <iostream>
 
 Rectangle::Rectangle(float width, float height) {

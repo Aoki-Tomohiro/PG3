@@ -44,7 +44,7 @@ int main() {
 	int second = 3;
 
 	//std::function
-	std::function<void(pFunc p, int second, std::string&, int)> fx = SetTimeout;
+	std::function<void(pFunc p, int second, std::string& answer, int result)> fx = SetTimeout;
 
 	//ラムダ式
 	[fx,second,&randomEngine]() {

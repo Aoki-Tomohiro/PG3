@@ -51,9 +51,8 @@ int main() {
 		std::cout << "奇数か偶数を選んでください" << std::endl;
 		std::string str;
 		std::cin >> str;
-		void (*pFunc)(std::string&, int) = &DispResult;
 		int result = DiceRoll(randomEngine);
-		fx(pFunc, second, str, result);
+		fx(DispResult, second, str, result);
 	}();
 
 	return 0;

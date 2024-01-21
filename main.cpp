@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include <algorithm>
 #include <vector>
 
@@ -125,25 +126,26 @@ int main() {
 	};
 
 	//並び替え
-	sort(studentsList.begin(), studentsList.end(), [](const char* a, const char* b) {
-		int numericPartA = 0;
-		int numericPartB = 0;
+	std::sort(studentsList.begin(), studentsList.end(), [](const char* a, const char* b) {
+		std::string num1;
+		std::string num2;
+
 		while (*a) {
 			if (std::isdigit(*a)) {
-				numericPartA = numericPartA * 10 + (*a - '0');
+				num1 += *a;
 			}
 			++a;
 		}
 
 		while (*b) {
 			if (std::isdigit(*b)) {
-				numericPartB = numericPartB * 10 + (*b - '0');
+				num2 += *b;
 			}
 			++b;
 		}
 
-		return numericPartA < numericPartB;
-	});
+		return std::stoi(num1) < std::stoi(num2);
+		});
 
 	//表示
 	for (std::vector<const char*>::iterator itr = studentsList.begin(); itr != studentsList.end(); ++itr) {
